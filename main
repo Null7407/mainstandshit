@@ -388,7 +388,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		elseif SummonMusic == "On" and not SummonMusicID == "Default" then
 			play(SummonMusicID, true, true)
 		end
-		local A_1 = "I'm Here, Master" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+		local A_1 = "I'm Here, zaddy Zeno" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 		follow = true
 		barragepos = false
 		oranear = false
@@ -421,7 +421,7 @@ end)
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Mimic!") then
 
-		local A_1 = "Mimic Enabled Master!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+		local A_1 = "Mimic Enabled zaddy Zeno!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
 		follow = true
 		barragepos = false
@@ -549,7 +549,7 @@ end)
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Stop!") then	
 
-		local A_1 = "Master Disabled My Powers!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+		local A_1 = "zaddy Zeno Disabled My Powers!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
 		follow = false
 		barragepos = false
@@ -574,7 +574,7 @@ end)
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Left!") then	
 
-		local A_1 = "Position Set Master!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+		local A_1 = "Position Set zaddy Zeno!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
 		Pos = "Left"
 	end
@@ -583,7 +583,7 @@ end)
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Right!") then
 
-		local A_1 = "Position Set Master!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+		local A_1 = "Position Set zaddy Zeno!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
 		Pos = "Right"
 	end
@@ -592,7 +592,7 @@ end)
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Back!") then	
 
-		local A_1 = "Position Set Master!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+		local A_1 = "Position Set zaddy Zeno!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
 		Pos = "Back"
 	end
@@ -654,7 +654,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		game.Workspace.Camera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 		wait()
 
-		local A_1 = "Im Back Master!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+		local A_1 = "Im Back zaddy Zeno!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
 		if VanishAppear == "On" then
 			play(6543435253, true, true)
@@ -758,7 +758,7 @@ end)
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Unbind!") then
 
-		local A_1 = "Bind Disabled Master!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+		local A_1 = "Bind Disabled zaddy Zeno!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
 		bind = false
 	end
@@ -1096,7 +1096,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("DropCash!") then
-		local A_1 = "Anything For My Master!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+		local A_1 = "Anything For My zaddy Zeno!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 		local A_1 = "DropMoney"
 		local A_2 = "10000"
 		local Event = game:GetService("ReplicatedStorage").MainEvent
