@@ -695,7 +695,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("Ora!") then
+	if msg == ("Muda!") then
 
 		if game.Players.LocalPlayer.Backpack:FindFirstChild("Combat") then
 			game.Players.LocalPlayer.Backpack:FindFirstChild("Combat").Parent = game.Players.LocalPlayer.Character
@@ -1182,7 +1182,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("ORA!") then
+	if msg == ("MUDA!") then
 
 		oranear = true
 		autostomp = false
@@ -1198,7 +1198,7 @@ end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Barrage!") then
-		local A_1 = "ORA! ORA! ORA! ORA!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+		local A_1 = "MUDA" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
 		play(5487424124, false, true)
 		follow = false
@@ -1219,6 +1219,15 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 			wait()
 			game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
 			game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Deactivate()
+					local A_1 = "MUDA! MUDA! MUDA! MUDA!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+					wait(0.5)
+							local A_1 = "MUDA! MUDA! MUDA! MUDA!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+							wait(0.5)
+									local A_1 = "MUDA! MUDA! MUDA! MUDA!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+									wait(0.5)
+							local A_1 = "MUDA! MUDA! MUDA! MUDA!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+							wait(0.5)
+									local A_1 = "MUDA! MUDA! MUDA! MUDA!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 		until barragepunch == false
 	end
 end)
