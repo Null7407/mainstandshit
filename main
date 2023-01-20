@@ -1774,7 +1774,32 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 
 	end
 end)
+game.Players[StandOwner].Chatted:Connect(function(msg)
+	if msg == ("Jail2!") then
 
+		follow = false
+		barragepos = false
+		barragepunch = false
+		evolvefollow = false
+		aura = false
+		killnear = false
+		mimic = false
+		vanish = false
+		killed = false
+		bring = false
+		Block = false
+		killtheplayer = false
+		mimicpunch = false
+		follow = false
+		wait(.6)
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-296.603912, 23.31703, -110.646622, -0.016272895, -1.30020723e-08, -0.999867558, -2.65110955e-09, 1, -1.29606477e-08, 0.999867558, 2.43985121e-09, -0.016272895)
+		wait(.6)
+		game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
+		wait(.4)
+		follow = true
+
+	end    
+end)
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Jail!") then
 
@@ -1801,7 +1826,58 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 
 	end    
 end)
+game.Players[StandOwner].Chatted:Connect(function(msg)
+	if msg == ("Bank!") then
 
+		follow = false
+		barragepos = false
+		barragepunch = false
+		evolvefollow = false
+		aura = false
+		killnear = false
+		mimic = false
+		vanish = false
+		killed = false
+		bring = false
+		Block = false
+		killtheplayer = false
+		mimicpunch = false
+		follow = false
+		wait(.6)
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-468.514282, 40.5805779, -283.36853, 0.0150848385, -1.47304142e-08, -0.999886215, -4.24960618e-08, 1, -1.53732103e-08, 0.999886215, 4.27231299e-08, 0.0150848385)
+		wait(.6)
+		game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
+		wait(.4)
+		follow = true
+
+	end    
+end)
+game.Players[StandOwner].Chatted:Connect(function(msg)
+	if msg == ("Bank!") then
+
+		follow = false
+		barragepos = false
+		barragepunch = false
+		evolvefollow = false
+		aura = false
+		killnear = false
+		mimic = false
+		vanish = false
+		killed = false
+		bring = false
+		Block = false
+		killtheplayer = false
+		mimicpunch = false
+		follow = false
+		wait(.6)
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-264.287201, 1.54842722, -329.793182, 0.999969304, 6.11384454e-09, 0.00783391204, -6.00780403e-09, 1, -1.35596361e-08, -0.00783391204, 1.35121558e-08, 0.999969304)
+		wait(.6)
+		game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
+		wait(.4)
+		follow = true
+
+	end    
+end)
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Void!") then
 
