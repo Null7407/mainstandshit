@@ -382,26 +382,6 @@ local rsummon = {
 }
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("Summon!") then
-		if SummonMusic == "On" and SummonMusicID == "Default" then
-			play((rsummon[math.random(1,#rsummon)]), true, true)
-		elseif SummonMusic == "On" and not SummonMusicID == "Default" then
-			play(SummonMusicID, true, true)
-		end
-		local A_1 = "I'm Here, zaddy Zeno" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
-		follow = true
-		barragepos = false
-		oranear = false
-		barragepunch = false
-		vanish = false
-		autostomp = false
-		aura = false
-		noclip = true
-		hoveranim:Play()
-	end
-end)
-
-game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Unmimic!") then
 
 		follow = true
@@ -611,7 +591,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("Vanish!") then
+	if msg == ("/e vanish") then
 		local A_1 = "Vanishing!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 		if VanishAppear == "On" then
 			play(6546133414, true, true)
@@ -644,7 +624,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("Appear!") then
+	if msg == ("The World!") then
 		vanish = false
 		follow = true
 		noclip = true
@@ -653,8 +633,6 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		vanish = false
 		game.Workspace.Camera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 		wait()
-
-		local A_1 = "Im Back zaddy Zeno!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
 		if VanishAppear == "On" then
 			play(6543435253, true, true)
