@@ -1272,7 +1272,6 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		end
 		wait()
 		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
-		wait(5)
 
 		repeat wait()
 			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
@@ -1282,7 +1281,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 				wait(.4)
 				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-726.136169, -39.6542053, -885.562744)
-				wait(1.5)
+				wait(1)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 
 			end
@@ -1325,7 +1324,6 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		end
 		wait()
 		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
-		wait(5)
 
 		repeat wait()
 			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
@@ -1335,7 +1333,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 				wait(.4)
 				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-578.96765136719, 66.649810791016, -682.64239501953)
-				wait(1.5)
+				wait(1)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 
 			end
@@ -1378,7 +1376,6 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		end
 		wait()
 		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
-		wait(5)
 
 		repeat wait()
 			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
@@ -1388,7 +1385,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 				wait(.4)
 				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(432.02212524414, 106.68374633789, -624.31518554688)
-				wait(1.5)
+				wait(1)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 
 			end
@@ -1431,7 +1428,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		end
 		wait()
 		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
-		wait(5)
+
 
 		repeat wait()
 			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
@@ -1441,7 +1438,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 				wait(.4)
 				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-445.48233032227, 39.001861572266, -284.55798339844)
-				wait(1.5)
+				wait(1)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 
 			end
@@ -1484,7 +1481,6 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		end
 		wait()
 		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
-		wait(5)
 
 		repeat wait()
 			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
@@ -1494,7 +1490,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 				wait(.4)
 				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-264.96301269531, -6.2083458900452, -379.59927368164)
-				wait(1.5)
+				wait(1)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 
 			end
@@ -1537,7 +1533,6 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		end
 		wait()
 		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
-		wait(5)
 
 		repeat wait()
 			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
@@ -1547,7 +1542,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 				wait(.4)
 				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1001.9741210938, 80.306343078613, -230.61473083496)
-				wait(1.5)
+				wait(1)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 
 			end
@@ -1590,7 +1585,6 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		end
 		wait()
 		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
-		wait(5) 
 
 		repeat wait()
 			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
@@ -1600,7 +1594,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 				wait(.4)
 				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(69.059066772461, 139, -688.31414794922)
-				wait(1.5)
+				wait(1)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 
 			end
@@ -1643,7 +1637,6 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		end
 		wait()
 		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
-		wait(5)
 
 		repeat wait()
 			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
@@ -1653,7 +1646,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 				wait(.4)
 				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(109.26601409912, 21.880002975464, -806.00689697266)
-				wait(1.5)
+				wait(1)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 
 			end
@@ -1696,7 +1689,6 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		end
 		wait()
 		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
-		wait(5)
 
 		repeat wait()
 			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
@@ -1706,7 +1698,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 				wait(.4)
 				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-586.56262207031, 68.625, 326.88354492188)
-				wait(1.5)
+				wait(1)
 				game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 
 			end
@@ -1797,7 +1789,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		follow = false
 		wait(.6)
 		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-798.12994384766, -39.649200439453, -841.04211425781)
-		wait(.6)
+		wait(.4)
 		game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 		wait(.4)
 		follow = true
@@ -1823,7 +1815,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		follow = false
 		wait(.6)
 		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-468.514282, 40.5805779, -283.36853, 0.0150848385, -1.47304142e-08, -0.999886215, -4.24960618e-08, 1, -1.53732103e-08, 0.999886215, 4.27231299e-08, 0.0150848385)
-		wait(.6)
+		wait(.4)
 		game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 		wait(.4)
 		follow = true
@@ -1831,7 +1823,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 	end    
 end)
 game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("Bank!") then
+	if msg == ("Club!") then
 
 		follow = false
 		barragepos = false
@@ -1873,7 +1865,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		Block = false
 		mimicpunch = false
 		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-879.11431884766, -417.69311523438, -983.22149658203)
-		wait(1)
+		wait(0.5)
 		game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
 		wait(1)
 		follow = true
