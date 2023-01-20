@@ -1431,7 +1431,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		end
 		wait()
 		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
-		wait(0.5)
+		wait(1.5)
 
 
 		repeat wait()
@@ -1485,7 +1485,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		end
 		wait()
 		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
-		wait(0.5)
+		wait(1.5)
 
 		repeat wait()
 			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
@@ -1538,7 +1538,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		end
 		wait()
 		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
-		wait(0.5)
+		wait(1.5)
 
 		repeat wait()
 			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
@@ -1591,7 +1591,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		end
 		wait()
 		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
-		wait(0.5)
+		wait(1.5)
 
 		repeat wait()
 			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
@@ -1644,7 +1644,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		end
 		wait()
 		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
-		wait(0.5)
+		wait(1.5)
 
 		repeat wait()
 			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
@@ -1697,7 +1697,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		end
 		wait()
 		game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
-		wait(0.5)
+		wait(1.5)
 
 		repeat wait()
 			if game.Players[StandOwner].Character.BodyEffects["K.O"].Value == true then
