@@ -2178,7 +2178,32 @@ game.Players.LocalPlayer.CharacterAdded:connect(function()
 	hoveranim:Play()
 
 	wait()
+local function rm()
+    for i, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+        if v.Name == "OriginalPosition" then
+            v:Destroy()
+        elseif v.Name == "OriginalSize" then
+            v:Destroy()
+        elseif v.Name == "AvatarPartScaleType" then
+            v:Destroy()
+        end
+    end
+end
+rm()
+wait(0.5)
+Humanoid = game.Players.LocalPlayer.Character.Humanoid
+Humanoid:FindFirstChild("BodyTypeScale"):Destroy()
+wait(1)
 
+rm()
+wait(0.5)
+Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
+wait(1)
+
+rm()
+wait(0.5)
+rm()
+wait(1)
 game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
 game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
 
