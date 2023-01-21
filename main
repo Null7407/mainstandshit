@@ -918,7 +918,7 @@ function findPlayer(name)
 		end
 	end
 end
-commands.e = function(arguments)
+commands = function(arguments)
 	local CMD = arguments[1]
 	if CMD == 'StandOwner' then
 		if arguments[2] then
