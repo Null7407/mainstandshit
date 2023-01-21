@@ -796,7 +796,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 
 		repeat wait()
 
-			Player.Character.HumanoidRootPart.CFrame = CFrame.new(StandUser.Character.UpperTorso.Position.X, StandUser.Character.UpperTorso.Position.Y - 3, StandUser.Character.UpperTorso.Position.Z)
+			Player.Character.HumanoidRootPart.CFrame = CFrame.new(StandUser.Character.UpperTorso.Position.X, StandUser.Character.UpperTorso.Position.Y - 1.5, StandUser.Character.UpperTorso.Position.Z)
 			wait()
 			Hit()
 		until aura == false
