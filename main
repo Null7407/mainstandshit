@@ -2065,7 +2065,7 @@ game:GetService('RunService').Stepped:connect(function()
 			game.Players.LocalPlayer.Character.LeftUpperArm:Destroy()
 		end
 	end
-end
+)
 
 game:GetService('RunService').Stepped:connect(function()
 	if killnear == true then
