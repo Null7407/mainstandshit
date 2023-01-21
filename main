@@ -154,22 +154,6 @@ if lowgraphics == "On" then
 	end
 	print("Low Graphics Enabled!")
 end
-wait(1)
-		game.Players.LocalPlayer.Character.Head:Destroy()
-		game.Players.LocalPlayer.Character.RightHand:Destroy()
-		game.Players.LocalPlayer.Character.LeftHand:Destroy()
-		game.Players.LocalPlayer.Character.LowerTorso:Destroy()
-		game.Players.LocalPlayer.Character.UpperTorso:Destroy()
-		game.Players.LocalPlayer.Character.LeftLowerLeg:Destroy()
-		game.Players.LocalPlayer.Character.RightLowerLeg:Destroy()
-		game.Players.LocalPlayer.Character.RightFoot:Destroy()
-		game.Players.LocalPlayer.Character.LeftFoot:Destroy()
-		game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
-		game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
-		game.Players.LocalPlayer.Character.RightUpperArm:Destroy()
-		game.Players.LocalPlayer.Character.RightLowerArm:Destroy()
-		game.Players.LocalPlayer.Character.LeftLowerArm:Destroy()
-		game.Players.LocalPlayer.Character.LeftUpperArm:Destroy()
 --locals for Attack!
 local StandUser = game.Players[StandOwner]
 local Player = game.Players.LocalPlayer
@@ -359,7 +343,21 @@ function play(ID, STOP, LMAO)
 	end
 end
 --end
-
+		game.Players.LocalPlayer.Character.Head:Destroy()
+		game.Players.LocalPlayer.Character.RightHand:Destroy()
+		game.Players.LocalPlayer.Character.LeftHand:Destroy()
+		game.Players.LocalPlayer.Character.LowerTorso:Destroy()
+		game.Players.LocalPlayer.Character.UpperTorso:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerLeg:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerLeg:Destroy()
+		game.Players.LocalPlayer.Character.RightFoot:Destroy()
+		game.Players.LocalPlayer.Character.LeftFoot:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
+		game.Players.LocalPlayer.Character.RightUpperArm:Destroy()
+		game.Players.LocalPlayer.Character.RightLowerArm:Destroy()
+		game.Players.LocalPlayer.Character.LeftLowerArm:Destroy()
+		game.Players.LocalPlayer.Character.LeftUpperArm:Destroy()
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Banish!") then
 
