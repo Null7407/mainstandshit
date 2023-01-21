@@ -2210,11 +2210,6 @@ game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
 game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
 
 	wait()
-Player.Backpack:FindFirstChild("[Knife]").Parent = Player.Character
-wait(0.7)
-		player = game.Players.LocalPlayer
-                        player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(100,100,100)
-        	player.Character:FindFirstChildWhichIsA('Tool').Handle.Transparency = 1
 	follow = true
 	wait()
 	noclip = true
@@ -2227,7 +2222,11 @@ wait(0.7)
 		end
 	end
 end)
-
+player = game.Players.LocalPlayer
+player.Backpack:FindFirstChild("[Knife]").Parent = Player.Character
+wait(0.7)
+                        player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(100,100,100)
+        	player.Character:FindFirstChildWhichIsA('Tool').Handle.Transparency = 1
 game.Players.PlayerRemoving:Connect(function(plr)
 	if plr.Name == StandOwner then
 		follow = false
