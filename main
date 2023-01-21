@@ -2223,7 +2223,7 @@ game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
 	end
 end)
 player = game.Players.LocalPlayer
-player.Backpack:FindFirstChild("[Knife]").Parent = Player.Character
+player.Backpack:FindFirstChild("[Knife]").Parent = player.Character
 wait(0.7)
                         player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(100,100,100)
         	player.Character:FindFirstChildWhichIsA('Tool').Handle.Transparency = 1
