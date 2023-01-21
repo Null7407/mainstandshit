@@ -1,7 +1,5 @@
--- By JoJo#2494
--- Script Name: Nova Stand
--- https://discord.io/legacyx
--- https://discord.gg/jojow
+-- By Null#7407
+
 
 wait(0.1)
 if not game['Loaded'] or not game:GetService("Players").LocalPlayer then
@@ -88,12 +86,6 @@ game:service"RunService".RenderStepped:connect(function()
 		clock = tick()
 	end
 end)
-
-game.StarterGui:SetCore("SendNotification", {
-	Title = "Nova Stand"; 
-	Text = "Remade By JoJo#2494";
-	Duration = 30;
-})
 
 
 lp = game:GetService("Players").LocalPlayer
