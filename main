@@ -2166,9 +2166,11 @@ game.Players.LocalPlayer.CharacterAdded:connect(function()
 		game:GetService("VirtualUser"):ClickButton1(Vector2.new())
 		wait()
 		game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):UnequipTools()
-		wait(.2)
-		follow = true
-		noclip = true
+		player = game.Players.LocalPlayer
+player.Backpack:FindFirstChild("[Knife]").Parent = player.Character
+wait(0.7)
+                        player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(80,80,80)
+        	player.Character:FindFirstChildWhichIsA('Tool').Handle.Transparency = 1
 		wait(.3)
 		for i,v in pairs(game:GetService'Players'.LocalPlayer.Character:GetChildren())do
 			if v.Name == "In-gameMask" then 
@@ -2219,12 +2221,6 @@ game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
 		end
 	end
 end)
-wait(2)
-player = game.Players.LocalPlayer
-player.Backpack:FindFirstChild("[Knife]").Parent = player.Character
-wait(0.7)
-                        player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(100,100,100)
-        	player.Character:FindFirstChildWhichIsA('Tool').Handle.Transparency = 1
 game.Players.PlayerRemoving:Connect(function(plr)
 	if plr.Name == StandOwner then
 		follow = false
