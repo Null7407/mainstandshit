@@ -907,6 +907,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 	end
 end)
 local commands = {}
+local prefix = "/"
 local Players = game.Players
 
 function findPlayer(name)
