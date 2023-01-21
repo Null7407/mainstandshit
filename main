@@ -2175,7 +2175,6 @@ game.Players.LocalPlayer.CharacterAdded:connect(function()
 		follow = true
 		noclip = true
 		wait(.3)
-		end
 		wait(1)
 		game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):UnequipTools()
 
