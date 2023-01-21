@@ -2167,7 +2167,7 @@ game.Players.LocalPlayer.CharacterAdded:connect(function()
 		wait(.3)
 		if game.Players.LocalPlayer.Backpack:FindFirstChild("[Knife]") then
 		player = game.Players.LocalPlayer
-            player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(50,50,50)
+            player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(55,55,55)
         	player.Character:FindFirstChildWhichIsA('Tool').Handle.Transparency = 1
 		end
 		wait(.2)
