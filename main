@@ -957,7 +957,7 @@ commands.e = function(arguments)
 			repeat wait()
 				if game.Players[target1].Character.BodyEffects["K.O"].Value == false then
 					if game. Players.LocalPlayer.Backpack:FindFirstChild("[Knife]") then
-						game.Players.LocalPlayer.Backpack:FindFirstChild("[Knife]").Parent = game.Players.LocalPlayer.Character
+print("ok cool")
 					end
 					wait()
 					game.Players.LocalPlayer.Character:FindFirstChild('[Knife]'):Activate()
