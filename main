@@ -957,11 +957,10 @@ commands.e = function(arguments)
 			repeat wait()
 				if game.Players[target1].Character.BodyEffects["K.O"].Value == false then
 					if game. Players.LocalPlayer.Backpack:FindFirstChild("[Knife]") then
-print("ok cool")
+Player.Backpack:FindFirstChild('[Knife]').Parent = Player.Character
 					end
 					wait()
-					game.Players.LocalPlayer.Character:FindFirstChild('[Knife]'):Activate()
-					game.Players.LocalPlayer.Character:FindFirstChild('[Knife]'):Deactivate()
+					game:GetService("VirtualUser"):ClickButton1(Vector2.new())
 					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[target1].Character.HumanoidRootPart.CFrame
 				end
 			until game.Players[target1].Character.BodyEffects["K.O"].Value == true or bring == false
