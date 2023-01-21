@@ -946,7 +946,7 @@ commands.e = function(arguments)
 			barragepunch = false
 			follow = false
 			vanish = false
-			noclip = false
+			noclip = true
 			killnear = false
 			bring = true
 			game.Workspace.Camera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
@@ -979,7 +979,6 @@ game.Players.LocalPlayer.Character:FindFirstChild("[Knife]"):Activate()
 				end
 			until game.Players[target1].Character.BodyEffects["K.O"].Value == false or bring == false
 			follow = true
-			noclip = true
 		end
 	elseif CMD == 't' then
 		if arguments[2] then
