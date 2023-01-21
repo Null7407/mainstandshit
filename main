@@ -737,22 +737,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):UnequipTools()
 	end
 end)
-
-game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("Bind!") then
-		local A_1 = "Bind Enabled!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
-		bind = true
-	end
-end)
-
-game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("Unbind!") then
-
-		local A_1 = "Bind Disabled zaddy Zeno!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
-
-		bind = false
-	end
-end)
+bind = true
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Save!") then
@@ -2179,7 +2164,7 @@ game.Players.LocalPlayer.CharacterAdded:connect(function()
 		wait(.3)
 		if game.Players.LocalPlayer.Backpack:FindFirstChild("[Knife]") then
 		player = game.Players.LocalPlayer
-            player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(55,55,55)
+            player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(80,80,80)
         	player.Character:FindFirstChildWhichIsA('Tool').Handle.Transparency = 1
 		end
 		wait(.2)
