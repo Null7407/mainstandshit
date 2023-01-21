@@ -906,13 +906,16 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		game.Workspace.Camera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 	end
 end)
+local Players = game.Players
+
 function findPlayer(name)
 	for _, player in ipairs(Players:GetPlayers()) do
 		if (string.lower(name) == string.sub(string.lower(player.Name), 1, #name)) then
 			return player;
 		end
 	end
-end  
+end
+	  
 --print(tostring(findPlayer(arguments[2])))
 local gettingkilled = ""
 local brotagettingkilled = ""
