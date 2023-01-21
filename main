@@ -2147,14 +2147,11 @@ game.Players.LocalPlayer.CharacterAdded:connect(function()
 	hoveranim:Play()
 
 	wait()
-		game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):UnequipTools()
 
 		local plr = game.Players.LocalPlayer
 		plr.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop["[Knife] - $155"].Head.CFrame
 		wait(.3)
 		fireclickdetector(game.Workspace.Ignored.Shop["[Knife] - $155"].ClickDetector)
-		wait(.3)
-		Player.Backpack:FindFirstChild("[Knife]").Parent = Player.Character
 		wait(1)
 
 		local plr = game.Players.LocalPlayer
@@ -2222,6 +2219,7 @@ game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
 		end
 	end
 end)
+wait(2)
 player = game.Players.LocalPlayer
 player.Backpack:FindFirstChild("[Knife]").Parent = player.Character
 wait(0.7)
