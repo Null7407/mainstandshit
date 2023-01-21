@@ -2155,13 +2155,6 @@ game.Players.LocalPlayer.CharacterAdded:connect(function()
 		fireclickdetector(game.Workspace.Ignored.Shop["[Knife] - $155"].ClickDetector)
 		wait(.3)
 		Player.Backpack:FindFirstChild("[Knife]").Parent = Player.Character
-		wait(0.7)
-		if game.Players.LocalPlayer.Backpack:FindFirstChild("[Knife]") then
-		player = game.Players.LocalPlayer
-                        player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(100,100,100)
-        	player.Character:FindFirstChildWhichIsA('Tool').Handle.Transparency = 1
-		end
-		wait(0.5)
 		wait(1)
 
 		local plr = game.Players.LocalPlayer
@@ -2185,6 +2178,7 @@ game.Players.LocalPlayer.CharacterAdded:connect(function()
 				v.Handle:Destroy()
 			end
 		end
+
 		wait(1.5)
 local function rm()
     for i, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
@@ -2216,7 +2210,11 @@ game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
 game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
 
 	wait()
-
+Player.Backpack:FindFirstChild("[Knife]").Parent = Player.Character
+wait(0.7)
+		player = game.Players.LocalPlayer
+                        player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(100,100,100)
+        	player.Character:FindFirstChildWhichIsA('Tool').Handle.Transparency = 1
 	follow = true
 	wait()
 	noclip = true
