@@ -2165,12 +2165,8 @@ game.Players.LocalPlayer.CharacterAdded:connect(function()
 		fireclickdetector(game.Workspace.Ignored.Shop["[Knife] - $155"].ClickDetector)
 		wait(.3)
 		if game.Players.LocalPlayer.Backpack:FindFirstChild("[Knife]") then
-			game.Players.LocalPlayer.Backpack["[Knife]"].Handle.Size = Vector3.new(100, 100, 100)
+			game.Players.LocalPlayer.Backpack["[Knife]"].Handle.Size = Vector3.new(150, 150, 150)
 		end
-		wait(.2)
-		game:GetService("VirtualUser"):ClickButton1(Vector2.new())
-		wait()
-		game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):UnequipTools()
 		wait(.2)
 		follow = true
 		noclip = true
