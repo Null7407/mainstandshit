@@ -950,7 +950,7 @@ commands.e = function(arguments)
 			barragepunch = false
 			follow = false
 			vanish = false
-			noclip = true
+			noclip = false
 			killnear = false
 			bring = true
 			game.Workspace.Camera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
@@ -2165,7 +2165,7 @@ game.Players.LocalPlayer.CharacterAdded:connect(function()
 		fireclickdetector(game.Workspace.Ignored.Shop["[Knife] - $155"].ClickDetector)
 		wait(.3)
 		if game.Players.LocalPlayer.Backpack:FindFirstChild("[Knife]") then
-			game.Players.LocalPlayer.Backpack["[Knife]"].Handle.Size = Vector3.new(150, 150, 150)
+			game.Players.LocalPlayer.Backpack["[Knife]"].Handle.Size = Vector3.new(100, 100, 100)
 		end
 		wait(.2)
 		wait(1)
