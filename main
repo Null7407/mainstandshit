@@ -182,18 +182,18 @@ killtheplayer = false
 
 function Hit()
 	if Attack == 'Heavy!' then
-		if Player.Character:FindFirstChild('[Knife]') then
-			Player.Character:FindFirstChild('[Knife]'):Activate()
+		if Player.Character:FindFirstChild('Combat') then
+			Player.Character:FindFirstChild('Combat'):Activate()
 		else
-			Player.Backpack:FindFirstChild('[Knife]').Parent = Player.Character
+			Player.Backpack:FindFirstChild('Combat').Parent = Player.Character
 		end   
 	else
 		if Attack == 'Light!' then
-			if Player.Character:FindFirstChild('[Knife]') then
-				Player.Character:FindFirstChild('[Knife]'):Activate()
-				Player.Character:FindFirstChild('[Knife]'):Deactivate()
+			if Player.Character:FindFirstChild('Combat') then
+				Player.Character:FindFirstChild('Combat'):Activate()
+				Player.Character:FindFirstChild('Combat'):Deactivate()
 			else
-				Player.Backpack:FindFirstChild('[Knife]').Parent = Player.Character
+				Player.Backpack:FindFirstChild('Combat').Parent = Player.Character
 			end  
 		end
 	end
@@ -2070,13 +2070,12 @@ game:GetService('RunService').Stepped:connect(function()
 	if killnear == true then
 		follow = false
 		noclip = false
-		Player.Backpack:FindFirstChild("[Knife]").Parent = Player.Character
 		local target = GetNearest()
 		if target then
 			local targetchar = target.Character
 			if targetchar.BodyEffects['K.O'].Value == false then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = targetchar.HumanoidRootPart.CFrame
-				game.Players.LocalPlayer.Character:FindFirstChild("[Knife]"):Activate()
+				Hit()
 			end
 		else
 			follow = true
@@ -2162,7 +2161,7 @@ game.Players.LocalPlayer.CharacterAdded:connect(function()
 		wait(.3)
 		if game.Players.LocalPlayer.Backpack:FindFirstChild("[Knife]") then
 		player = game.Players.LocalPlayer
-            player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(80,80,80)
+            player.Character:FindFirstChildWhichIsA('Tool').Handle.Size = Vector3.new(100,100,100)
         	player.Character:FindFirstChildWhichIsA('Tool').Handle.Transparency = 1
 		end
 		wait(.2)
