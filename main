@@ -737,7 +737,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):UnequipTools()
 	end
 end)
-bind = true
+
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Save!") then
@@ -2045,7 +2045,6 @@ game:GetService('RunService').Stepped:connect(function()
 end)
 
 game:GetService('RunService').Stepped:connect(function()
-	if bind == true then
 		local LocalPlayer = game:GetService("Players").LocalPlayer
 		local char = LocalPlayer.Character
 		if game.Players.LocalPlayer.Character.Humanoid.Health <= 5 then
