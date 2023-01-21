@@ -2168,9 +2168,6 @@ game.Players.LocalPlayer.CharacterAdded:connect(function()
 			game.Players.LocalPlayer.Backpack["[Knife]"].Handle.Size = Vector3.new(150, 150, 150)
 		end
 		wait(.2)
-		follow = true
-		noclip = true
-		wait(.3)
 		wait(1)
 		game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):UnequipTools()
 
