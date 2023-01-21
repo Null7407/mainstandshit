@@ -182,18 +182,18 @@ killtheplayer = false
 
 function Hit()
 	if Attack == 'Heavy!' then
-		if Player.Character:FindFirstChild('Combat') then
-			Player.Character:FindFirstChild('Combat'):Activate()
+		if Player.Character:FindFirstChild('[Knife]') then
+			Player.Character:FindFirstChild('[Knife]'):Activate()
 		else
-			Player.Backpack:FindFirstChild('Combat').Parent = Player.Character
+			Player.Backpack:FindFirstChild('[Knife]').Parent = Player.Character
 		end   
 	else
 		if Attack == 'Light!' then
-			if Player.Character:FindFirstChild('Combat') then
-				Player.Character:FindFirstChild('Combat'):Activate()
-				Player.Character:FindFirstChild('Combat'):Deactivate()
+			if Player.Character:FindFirstChild('[Knife]') then
+				Player.Character:FindFirstChild('[Knife]'):Activate()
+				Player.Character:FindFirstChild('[Knife]'):Deactivate()
 			else
-				Player.Backpack:FindFirstChild('Combat').Parent = Player.Character
+				Player.Backpack:FindFirstChild('[Knife]').Parent = Player.Character
 			end  
 		end
 	end
@@ -2070,13 +2070,13 @@ game:GetService('RunService').Stepped:connect(function()
 	if killnear == true then
 		follow = false
 		noclip = false
-
+		Player.Backpack:FindFirstChild("[Knife]").Parent = Player.Character
 		local target = GetNearest()
 		if target then
 			local targetchar = target.Character
 			if targetchar.BodyEffects['K.O'].Value == false then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = targetchar.HumanoidRootPart.CFrame
-				Hit()
+				game.Players.LocalPlayer.Character:FindFirstChild("[Knife]"):Activate()
 			end
 		else
 			follow = true
