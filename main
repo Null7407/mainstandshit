@@ -933,13 +933,35 @@ local plr = players.LocalPlayer
 end
         local target = getPlr(tostring(spaceSplit[2]):lower())
                 if target == nil then return end
-                follow = false
-                noclip = false
+		follow = false
+		barragepos = false
+		barragepunch = false
+		evolvefollow = false
+		noclip = false
+		aura = false
+		killnear = false
+		mimic = false
+		vanish = false
+		killed = false
+		bring = false
+		Block = false
+		mimicpunch = false
                 print(target)
                 StandOwner = target
-                wait(1)
-                follow = true
-                noclip = true
+                wait(1.5)
+		follow = true
+		barragepos = true
+		barragepunch = true
+		evolvefollow = true
+		noclip = true
+		aura = true
+		killnear = true
+		mimic = true
+		vanish = true
+		killed = true
+		bring = true
+		Block = true
+		mimicpunch = true
 		  end
 	  end)
 	  
