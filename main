@@ -906,6 +906,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		game.Workspace.Camera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 	end
 end)
+local commands = {}
 local Players = game.Players
 
 function findPlayer(name)
