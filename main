@@ -957,7 +957,7 @@ Player.Backpack:FindFirstChild('[Knife]').Parent = Player.Character
 					end
 					wait()
 game.Players.LocalPlayer.Character:FindFirstChild("[Knife]"):Activate()
-					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[target1].Character.HumanoidRootPart.CFrame
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players[target1].Character.UpperTorso.Position.X, game.Players[target1].Character.UpperTorso.Position.Y - 14, game.Players[target1].Character.UpperTorso.Position.Z)
 				end
 			until game.Players[target1].Character.BodyEffects["K.O"].Value == true or bring == false
 			wait()
