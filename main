@@ -926,7 +926,8 @@ commands.e = function(arguments)
 			print(target9)
 			StandOwner = target9
 		end
-	end)
+end
+end
 	
 
 --print(tostring(findPlayer(arguments[2])))
