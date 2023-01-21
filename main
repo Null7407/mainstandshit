@@ -796,9 +796,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 
 		repeat wait()
 
-			local RanX = math.random(-12,12)
-			local RanZ = math.random(-12,12)
-			Player.Character.HumanoidRootPart.CFrame = CFrame.new(StandUser.Character.UpperTorso.Position.X + RanX, StandUser.Character.UpperTorso.Position.Y - 10, StandUser.Character.UpperTorso.Position.Z + RanZ)
+			Player.Character.HumanoidRootPart.CFrame = CFrame.new(StandUser.Character.UpperTorso.Position.X, StandUser.Character.UpperTorso.Position.Y - 8, StandUser.Character.UpperTorso.Position.Z)
 			wait()
 			Hit()
 		until aura == false
