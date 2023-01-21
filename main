@@ -174,7 +174,6 @@ evolvefollow = false
 barragepos = false
 barragepunch = false
 vanish = false
-bind = false
 aura = false
 mimic = false
 Block = false
