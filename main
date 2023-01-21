@@ -795,8 +795,9 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		game.Workspace.Camera.CameraSubject = game.Players[StandOwner].Character.Humanoid;
 
 		repeat wait()
-
-			Player.Character.HumanoidRootPart.CFrame = CFrame.new(StandUser.Character.UpperTorso.Position.X, StandUser.Character.UpperTorso.Position.Y - 1.5, StandUser.Character.UpperTorso.Position.Z)
+			local RanX = math.random(-12,12)
+			local RanZ = math.random(-12,12)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.UWU1231231231231234.Character.UpperTorso.Position.X + RanX, game.Players.UWU1231231231231234.Character.UpperTorso.Position.Y - 10, game.Players.UWU1231231231231234.Character.UpperTorso.Position.Z + RanZ)
 			wait()
 			Hit()
 		until aura == false
