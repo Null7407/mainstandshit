@@ -962,6 +962,7 @@ end
 		bring = true
 		Block = true
 		mimicpunch = true
+		Pos = 'Left'
 		  end
 	  end)
 	  
