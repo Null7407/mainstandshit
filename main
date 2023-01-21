@@ -918,18 +918,31 @@ function findPlayer(name)
 		end
 	end
 end
-commands = function(arguments)
-	local CMD = arguments[1]
-	if CMD == 'StandOwner' then
-		if arguments[2] then
-			local target9 = tostring(findPlayer(arguments[2]))
-			print(target9)
-			StandOwner = target9
-		end
-end
-end
 	
-
+local cc;cc = game.Players.qtZenoo.Chatted:Connect(function(msg)
+    local spaceSplit = msg:split(" ")
+    if spaceSplit[1] == "/StandOwner" then
+    	players = game.Players
+local plr = players.LocalPlayer
+	local function getPlr(str)
+    for i,v in pairs(players:GetPlayers()) do
+        if v.Name:lower():match(str) or v.DisplayName:lower():match(str) then
+            return v
+        end
+    end
+end
+        local target = getPlr(tostring(spaceSplit[2]):lower())
+                if target == nil then return end
+                follow = false
+                noclip = false
+                print(target)
+                StandOwner = target
+                wait(1)
+                follow = true
+                noclip = true
+		  end
+	  end)
+	  
 --print(tostring(findPlayer(arguments[2])))
 local gettingkilled = ""
 local brotagettingkilled = ""
