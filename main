@@ -950,13 +950,11 @@ game.Players.LocalPlayer.Character:FindFirstChild("[Knife]"):Activate()
 				if game.Players[target1].Character.BodyEffects["K.O"].Value == true then
 				game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):UnequipTools()
 					game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Players")[target1].Character.UpperTorso.Position) * CFrame.new(0,1,0)
-					wait(.4)
 					game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Players")[target1].Character.UpperTorso.Position) * CFrame.new(0,1,0)
-					wait()
 					game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Players")[target1].Character.UpperTorso.Position) * CFrame.new(0,1,0)
-					wait(.4)
+					wait(.2)
 					game.ReplicatedStorage.MainEvent:FireServer("Grabbing")
-					wait(.6)
+					wait(.4)
 					game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Players")[StandOwner].Character.HumanoidRootPart.CFrame
 				end
 
