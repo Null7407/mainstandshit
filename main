@@ -2136,7 +2136,7 @@ game.Players.LocalPlayer.CharacterAdded:connect(function()
 	hoveranim:Play()
 
 	wait()
-local StandOwner876 = game.Players.qtZenoo
+local StandOwner876 = game.Players[StandOwner]
 local OWNER = StandOwner876
         local Glide = Instance.new('Animation', game:GetService("Workspace"))
     Glide.AnimationId = 'rbxassetid://3541044388'
