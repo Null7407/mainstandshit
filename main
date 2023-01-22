@@ -597,9 +597,9 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("/e vanish") then
 		local A_1 = "Vanishing!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 		if VanishAppear == "On" then
-			play(6546133414, true, true)
+			play(840567549, true, true)
 		end
-		wait(1.5)
+		wait(1)
 		StopAudio()
 		vanish = true
 		noclip = true
@@ -638,7 +638,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		wait()
 
 		if VanishAppear == "On" then
-			play(6543435253, true, true)
+			play(5688668370, true, true)
 		end
 	end
 end)
@@ -1186,7 +1186,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Barrage!") then
 					local A_1 = "MUDA! MUDA! MUDA! MUDA!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 
-		play(5487424124, false, true)
+		play(3392300106, false, true)
 		follow = false
 		oranear = false
 		autostomp = false
