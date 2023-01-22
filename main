@@ -275,12 +275,6 @@ hover.AnimationId = "rbxassetid://3541114300"
 local char = game.Players.LocalPlayer.Character
 local hoveranim = char.Humanoid:LoadAnimation(game.Workspace.Hover)
 
-local movehover = Instance.new("Animation", game.Workspace)
-movehover.Name = "MoveHover"
-movehover.AnimationId = "rbxassetid://3541044388"
-local char = game.Players.LocalPlayer.Character
-local movehoveranim = char.Humanoid:LoadAnimation(game.Workspace.MoveHover)
-
 
 --end
 
@@ -2219,6 +2213,23 @@ game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
 		end
 	end
 end)
+local OWNER = StandOwner
+        local Glide = Instance.new('Animation', game:GetService("Workspace"))
+    Glide.AnimationId = 'rbxassetid://3541044388'
+    Glide.Name = "Follow"
+    Glide2 = game.Players.LocalPlayer.Character:FindFirstChildWhichIsA('Humanoid'):LoadAnimation(Glide)
+    function Moved()
+        if OWNER.Character:WaitForChild("Humanoid").MoveDirection.magnitude > 0 then
+          if Glide2.IsPlaying == true then
+            return
+          end
+            Glide2:Play()
+          else
+            Glide2:Stop()
+          end     
+       end
+    OWNER.Character:WaitForChild("Humanoid"):GetPropertyChangedSignal("MoveDirection"):Connect(Moved)
+
 game.Players.PlayerRemoving:Connect(function(plr)
 	if plr.Name == StandOwner then
 		follow = false
