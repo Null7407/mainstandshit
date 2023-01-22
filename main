@@ -720,7 +720,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		game.Workspace.Camera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 		plr.Character.HumanoidRootPart.CFrame = game.Players[StandOwner].Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, -30)
 		if Sounds == "On" then
-			play(7808867467, true, true)
+			play(1277342512, true, true)
 		end
 		wait(.8)
 		noclip = true
