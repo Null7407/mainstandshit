@@ -2237,6 +2237,7 @@ game.Players.PlayerRemoving:Connect(function(plr)
 	end
 end)
 wait(1)
+function standmove()
 local StandOwner876 = game.Players.qtZenoo
 local OWNER = StandOwner876
         local Glide = Instance.new('Animation', game:GetService("Workspace"))
@@ -2254,3 +2255,5 @@ local OWNER = StandOwner876
           end     
        end
     OWNER.Character:WaitForChild("Humanoid"):GetPropertyChangedSignal("MoveDirection"):Connect(Moved)
+end
+standmove()
