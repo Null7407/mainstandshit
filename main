@@ -587,7 +587,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 	end
 end)
 
-game.Players[StandOwner].Chatted:Connect(function(msg)
+	game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("/e vanish") then
 		local A_1 = "Vanishing!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 		if VanishAppear == "On" then
