@@ -609,13 +609,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		vanish = true
 		game.Workspace.Camera.CameraSubject = game.Players[StandOwner].Character.Humanoid;
 		while vanish == true do
-			game:service('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-374.04702758789, 427.14468383789, -263.02795410156) wait()
-			game:service('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-235.09289550781, 427.14468383789, -326.25317382812) wait()
-			game:service('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-433.60748291016, 427.13568115234, -180.2112121582) wait()
-			game:service('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-351.47393798828, 427.11862182617, -182.98684692383) wait()
-			game:service('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-349.13708496094, 369.23416137695, -232.91188049316) wait()
-			game:service('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-255.47518920898, 326.90557861328, -307.60479736328) wait()
-			game:service('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-408.70520019531, 387.16589355469, -332.86459350586) wait()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players[StandOwner].Character.UpperTorso.Position.X, game.Players[StandOwner].Character.UpperTorso.Position.Y - 10, game.Players[StandOwner].Character.UpperTorso.Position.Z)
 		end
 	end
 end)
