@@ -615,6 +615,9 @@ spawn(function()
 end
 repeat until vanish == false
 end)
+end
+end)
+
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("The World!") then
