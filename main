@@ -609,8 +609,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		vanish = true
 		game.Workspace.Camera.CameraSubject = game.Players[StandOwner].Character.Humanoid;
 		while vanish == true do
-		wait(0.1)
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players[StandOwner].Character.UpperTorso.Position.X, game.Players[StandOwner].Character.UpperTorso.Position.Y - 10, game.Players[StandOwner].Character.UpperTorso.Position.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players[StandOwner].Character.UpperTorso.Position.X, game.Players[StandOwner].Character.UpperTorso.Position.Y - 14, game.Players[StandOwner].Character.UpperTorso.Position.Z)
 		end
 	end
 end)
@@ -790,10 +789,6 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 					if (v.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.LeftHand.Position).Magnitude <= 50 then
 						firetouchinterest(game.Players.LocalPlayer.Character['RightHand'], v.Character.UpperTorso, 0)
 						firetouchinterest(game.Players.LocalPlayer.Character['LeftHand'], v.Character.UpperTorso, 0)
-						firetouchinterest(game.Players.LocalPlayer.Character['RightFoot'], v.Character.UpperTorso, 0)
-						firetouchinterest(game.Players.LocalPlayer.Character['LeftFoot'], v.Character.UpperTorso, 0)
-						firetouchinterest(game.Players.LocalPlayer.Character['RightLowerLeg'], v.Character.UpperTorso, 0)
-						firetouchinterest(game.Players.LocalPlayer.Character['LeftLowerLeg'], v.Character.UpperTorso, 0)
 					end
 				end
 			end)
@@ -861,10 +856,6 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		game.Players.LocalPlayer.Character.LeftHand:Destroy()
 		game.Players.LocalPlayer.Character.LowerTorso:Destroy()
 		game.Players.LocalPlayer.Character.UpperTorso:Destroy()
-		game.Players.LocalPlayer.Character.LeftLowerLeg:Destroy()
-		game.Players.LocalPlayer.Character.RightLowerLeg:Destroy()
-		game.Players.LocalPlayer.Character.RightFoot:Destroy()
-		game.Players.LocalPlayer.Character.LeftFoot:Destroy()
 		game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
 		game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
 		game.Players.LocalPlayer.Character.RightUpperArm:Destroy()
@@ -2033,10 +2024,6 @@ game:GetService('RunService').Stepped:connect(function()
 			game.Players.LocalPlayer.Character.LeftHand:Destroy()
 			game.Players.LocalPlayer.Character.LowerTorso:Destroy()
 			game.Players.LocalPlayer.Character.UpperTorso:Destroy()
-			game.Players.LocalPlayer.Character.LeftLowerLeg:Destroy()
-			game.Players.LocalPlayer.Character.RightLowerLeg:Destroy()
-			game.Players.LocalPlayer.Character.RightFoot:Destroy()
-			game.Players.LocalPlayer.Character.LeftFoot:Destroy()
 			game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
 			game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
 			game.Players.LocalPlayer.Character.RightUpperArm:Destroy()
