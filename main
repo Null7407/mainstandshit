@@ -609,7 +609,7 @@ end)
 		game.Workspace.Camera.CameraSubject = game.Players[StandOwner].Character.Humanoid;
 		
 function savo()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players[StandOwner].Character.UpperTorso.Position.X, game.Players[StandOwner].Character.UpperTorso.Position.Y - 18, game.Players[StandOwner].Character.UpperTorso.Position.Z)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players[StandOwner].Character.UpperTorso.Position.X, game.Players[StandOwner].Character.UpperTorso.Position.Y - 22, game.Players[StandOwner].Character.UpperTorso.Position.Z)
 end
 repeat savo() wait() until vanish == false
 end
