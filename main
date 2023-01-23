@@ -609,6 +609,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 		vanish = true
 		game.Workspace.Camera.CameraSubject = game.Players[StandOwner].Character.Humanoid;
 		while vanish == true do
+		wait(0.1)
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players[StandOwner].Character.UpperTorso.Position.X, game.Players[StandOwner].Character.UpperTorso.Position.Y - 10, game.Players[StandOwner].Character.UpperTorso.Position.Z)
 		end
 	end
