@@ -813,27 +813,6 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("Power!") then
-
-		if Sounds == "On" then
-			play(2152227673, true, true)
-		end
-
-		while wait() do
-			pcall(function()
-				for i,v in pairs(game:GetService('Players'):GetChildren()) do
-					if (v.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.LeftHand.Position).Magnitude <= 50 then
-						firetouchinterest(game.Players.LocalPlayer.Character['RightHand'], v.Character.UpperTorso, 0)
-						firetouchinterest(game.Players.LocalPlayer.Character['LeftHand'], v.Character.UpperTorso, 0)
-					end
-				end
-			end)
-		end
-
-	end
-end)
-
-game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Synapse!") then
 
 		SynapseMode = "On"
@@ -2218,6 +2197,19 @@ game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
 		end
 	end
 end)
+spawn(function()
+					while wait() do
+			pcall(function()
+				for i,v in pairs(game:GetService('Players'):GetChildren()) do
+					if (v.Character.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.LeftHand.Position).Magnitude <= 50 then
+						firetouchinterest(game.Players.LocalPlayer.Character['RightHand'], v.Character.UpperTorso, 0)
+						firetouchinterest(game.Players.LocalPlayer.Character['LeftHand'], v.Character.UpperTorso, 0)
+					end
+				end
+			end)
+		end
+	end)
+	
 game.Players.PlayerRemoving:Connect(function(plr)
 	if plr.Name == StandOwner then
 		follow = false
