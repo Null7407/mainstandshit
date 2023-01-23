@@ -606,7 +606,6 @@ end)
 		mimic = false
 		Block = false
 		killtheplayer = false
-		vanish = true
 		game.Workspace.Camera.CameraSubject = game.Players[StandOwner].Character.Humanoid;
 		
 spawn(function()
