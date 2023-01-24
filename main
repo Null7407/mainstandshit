@@ -105,17 +105,6 @@ e.Parent = game.Workspace
 e.Name = "FLOATPART"
 e.Transparency = 1
 e.Anchored = true
-spawn(function()
-	while wait() do
-	if game.Players:FindFirstChild(StandOwner) == nil then
-		local A_1 = "Rejoining!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
-			TeleportService = game:GetService("TeleportService")
-		placeID_1 = 2788229376  --Da hood
-		wait()
-		TeleportService:Teleport(placeID_1, plr)
-	end
-	end
-end)
 
 if lowgraphics == "On" then
 	local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
@@ -2309,3 +2298,9 @@ game.Players.PlayerRemoving:Connect(function(plr)
 		StopAudio()
 	end
 end)
+repeat wait() until game.Players:FindFirstChild(StandOwner) == nil 
+		local A_1 = "Rejoining!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+			TeleportService = game:GetService("TeleportService")
+		placeID_1 = 2788229376  --Da hood
+		wait()
+		TeleportService:Teleport(placeID_1, plr)
