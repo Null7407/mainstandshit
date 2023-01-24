@@ -894,6 +894,23 @@ Teleport()
 	end     
 end)
 game.Players[StandOwner].Chatted:Connect(function(msg)
+	if msg == ("AutoRejoin!") then
+		local A_1 = "Auto Rejoin Enabled!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+spawn(function()
+	while wait() do
+	if game.Players:FindFirstChild("qtZenoo") == nil then
+			TeleportService = game:GetService("TeleportService")
+		placeID_1 = 2788229376  --Da hood
+		wait()
+		TeleportService:Teleport(placeID_1, plr)
+	end
+	end
+end)
+end
+end)
+
+
+game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Rejoin!") then
 
 		TeleportService = game:GetService("TeleportService")
