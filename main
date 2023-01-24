@@ -893,6 +893,11 @@ end
 Teleport()
 	end     
 end)
+game.Players[StandOwner].Chatted:Connect(function(msg)
+	if msg == ("Credits!") then
+		local A_1 = "This stand script was made by zeno!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+	end
+end)
 
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
