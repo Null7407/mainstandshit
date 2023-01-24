@@ -105,6 +105,17 @@ e.Parent = game.Workspace
 e.Name = "FLOATPART"
 e.Transparency = 1
 e.Anchored = true
+spawn(function()
+	while wait() do
+	if game.Players:FindFirstChild(StandOwner) == nil then
+		local A_1 = "Rejoining!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+			TeleportService = game:GetService("TeleportService")
+		placeID_1 = 2788229376  --Da hood
+		wait()
+		TeleportService:Teleport(placeID_1, plr)
+	end
+	end
+end)
 
 if lowgraphics == "On" then
 	local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
@@ -892,21 +903,6 @@ end
 -- If you'd like to use a script before server hopping (Like a Automatic Chest collector you can put the Teleport() after it collected everything.
 Teleport()
 	end     
-end)
-game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("AutoRejoin!") then
-		local A_1 = "Auto Rejoin Enabled!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
-spawn(function()
-	while wait() do
-	if game.Players:FindFirstChild("qtZenoo") == nil then
-			TeleportService = game:GetService("TeleportService")
-		placeID_1 = 2788229376  --Da hood
-		wait()
-		TeleportService:Teleport(placeID_1, plr)
-	end
-	end
-end)
-end
 end)
 
 
@@ -2293,7 +2289,6 @@ spawn(function()
 			end)
 		end
 	end)
-	
 game.Players.PlayerRemoving:Connect(function(plr)
 	if plr.Name == StandOwner then
 		follow = false
