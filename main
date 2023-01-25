@@ -674,7 +674,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("Song!") then
+	if msg == ("queue the music") then
 
 		play(CustomSong, false, true)
 
