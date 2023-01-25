@@ -350,7 +350,13 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 
 	end
 end)
+game.Players[StandOwner].Chatted:Connect(function(msg)
+	if msg == ("/e stopaudio") then
 
+		StopAudio()
+
+	end 
+end)
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("/e noface") then
 
