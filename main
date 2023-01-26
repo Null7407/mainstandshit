@@ -2409,14 +2409,12 @@ game.Workspace.Ignored.DescendantAdded:Connect(function(Ray)
         end
     end
 end)
-wait(1)
 game:GetService('RunService').Stepped:connect(function()
 		if game.Players.LocalPlayer.Character.BodyEffects.Armor.Value <= 70 then
 			follow = false
 			noclip = false
 player = game.Players.LocalPlayer
                       local ItemCost = 2369
-            buyingarmor = true
             local ClickDetector = game:GetService("Workspace").Ignored.Shop["[High-Medium Armor] - $2369"].ClickDetector
             local Location = game:GetService("Workspace").Ignored.Shop["[High-Medium Armor] - $2369"].ClickDetector.Parent.Head.Position
             OldCFrame = player.Character.HumanoidRootPart.CFrame
@@ -2425,10 +2423,13 @@ player = game.Players.LocalPlayer
                 player.Character.HumanoidRootPart.CFrame = CFrame.new(Location)
                 fireclickdetector(ClickDetector)
             end
+            buy()
+            wait(0.5)
             follow = true
             noclip = true
 		end    
 		end)
+		
 repeat wait() until game.Players:FindFirstChild(StandOwner) == nil 
 		local A_1 = "Rejoining!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 			TeleportService = game:GetService("TeleportService")
