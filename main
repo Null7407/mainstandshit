@@ -343,7 +343,7 @@ end
 		game.Players.LocalPlayer.Character.RightLowerArm:Destroy()
 		game.Players.LocalPlayer.Character.LeftLowerArm:Destroy()
 		game.Players.LocalPlayer.Character.LeftUpperArm:Destroy()
-wait(9)
+wait(10)
 --[[
 WHAT DOES GODV3 DO?:
 
@@ -361,7 +361,7 @@ getgenv().Settings = {
 }
 
 loadstring(game:HttpGet("https://icxy.xyz/NovaGui/NovaGuiGodv3", true))()
-
+wait(1)
 local Player = game.Players.LocalPlayer
 
 local OriginalKeyUpValue = 0
