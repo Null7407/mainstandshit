@@ -2135,6 +2135,61 @@ game:GetService('RunService').Stepped:connect(function()
 		game.ReplicatedStorage.MainEvent:FireServer("Stomp")
 	end
 end)
+local Player = game.Players.LocalPlayer
+
+local OriginalKeyUpValue = 0
+
+local Swing1 = Instance.new('Animation', game.ReplicatedStorage)
+Swing1.AnimationId = 'rbxassetid://8254794168'
+
+local Swing2 = Instance.new('Animation', game.ReplicatedStorage)
+Swing2.AnimationId = 'rbxassetid://8254792138'
+
+local Swing3 = Instance.new('Animation', game.ReplicatedStorage)
+Swing3.AnimationId = 'rbxassetid://8254789608'
+
+local Swing4 = Instance.new('Animation', game.ReplicatedStorage)
+Swing4.AnimationId = 'rbxassetid://8254787838'
+
+local _1 = Player.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(Swing1)
+local _2 = Player.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(Swing2)
+local _3 = Player.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(Swing3)
+local _4 = Player.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(Swing4)
+
+
+game.Workspace.Ignored.DescendantAdded:Connect(function(Ray)
+    if Ray:IsA('Attachment') then
+        local mag = (Player.Character.PrimaryPart.Position - Ray.WorldPosition).Magnitude
+        if mag <= 6 then
+            local Math = math.random(1,4)
+                if Math == 1 then
+                    _2:Stop()
+                    _3:Stop()
+                    _1:Play()
+                    _4:Stop()
+                    _1:AdjustSpeed(2.4)
+                elseif Math == 2 then
+                    _1:Stop()
+                    _3:Stop()
+                    _2:Play()
+                    _4:Stop()
+                    _2:AdjustSpeed(2.4)
+                elseif Math == 3 then
+                    _1:Stop()
+                    _2:Stop()
+                    _3:Play()
+                    _4:Stop()
+                    _3:AdjustSpeed(2.4)
+                elseif Math == 4 then
+                    _1:Stop()
+                    _2:Stop()
+                    _3:Stop()
+                    _4:Play()
+                    _4:AdjustSpeed(2.4)
+                end
+        end
+    end
+end)
 
 --noclip
 game:GetService('RunService').Stepped:connect(function()
@@ -2283,27 +2338,6 @@ spawn(function()
 			end)
 		end
 	end)
-	game:GetService('RunService').Stepped:connect(function()
-		if game.Players.LocalPlayer.Character.BodyEffects.Armor.Value <= 70 then
-			follow = false
-			noclip = false
-player = game.Players.LocalPlayer
-                      local ItemCost = 2369
-            local ClickDetector = game:GetService("Workspace").Ignored.Shop["[High-Medium Armor] - $2369"].ClickDetector
-            local Location = game:GetService("Workspace").Ignored.Shop["[High-Medium Armor] - $2369"].ClickDetector.Parent.Head.Position
-            OldCFrame = player.Character.HumanoidRootPart.CFrame
-            local function buy()
-                wait()
-                player.Character.HumanoidRootPart.CFrame = CFrame.new(Location)
-                fireclickdetector(ClickDetector)
-            end
-            buy()
-            wait(0.5)
-            follow = true
-            noclip = true
-		end
-	end
-)
 
 
 game.Players.PlayerRemoving:Connect(function(plr)
