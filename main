@@ -328,7 +328,7 @@ function play(ID, STOP, LMAO)
 	end
 end
 --end
-wait(1)
+wait(2)
 --[[
 WHAT DOES GODV3 DO?:
 
@@ -346,7 +346,7 @@ getgenv().Settings = {
 }
 
 loadstring(game:HttpGet("https://icxy.xyz/NovaGui/NovaGuiGodv3", true))()
-wait(10)
+wait(9)
 
 game:GetService('RunService').Stepped:connect(function()
 	if killnear == true then
