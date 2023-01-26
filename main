@@ -345,7 +345,7 @@ getgenv().Settings = {
 }
 
 loadstring(game:HttpGet("https://icxy.xyz/NovaGui/NovaGuiGodv3", true))()
-wait(1)
+wait(10)
 		local LocalPlayer = game:GetService("Players").LocalPlayer
 		local char = LocalPlayer.Character
 		if game.Players.LocalPlayer.Character.Humanoid.Health <= 5 then
