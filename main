@@ -2301,9 +2301,11 @@ player = game.Players.LocalPlayer
             wait(0.5)
             follow = true
             noclip = true
-		end    
-		end)
-		
+		end
+	end
+)
+
+
 game.Players.PlayerRemoving:Connect(function(plr)
 	if plr.Name == StandOwner then
 		follow = false
