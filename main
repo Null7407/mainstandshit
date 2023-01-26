@@ -343,7 +343,7 @@ end
 		game.Players.LocalPlayer.Character.RightLowerArm:Destroy()
 		game.Players.LocalPlayer.Character.LeftLowerArm:Destroy()
 		game.Players.LocalPlayer.Character.LeftUpperArm:Destroy()
-wait(7)
+wait(10)
 --[[
 WHAT DOES GODV3 DO?:
 
