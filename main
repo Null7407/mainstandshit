@@ -328,6 +328,7 @@ function play(ID, STOP, LMAO)
 	end
 end
 --end
+wait(1)
 --[[
 WHAT DOES GODV3 DO?:
 
