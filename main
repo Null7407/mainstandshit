@@ -2409,6 +2409,7 @@ game.Workspace.Ignored.DescendantAdded:Connect(function(Ray)
         end
     end
 end)
+game:GetService('RunService').Stepped:connect(function()
 		if game.Players.LocalPlayer.Character.BodyEffects.Armor.Value <= 70 then
 			follow = false
 			noclip = false
@@ -2426,7 +2427,8 @@ player = game.Players.LocalPlayer
             repeat buy() until player.Character.BodyEffects.Armor.Value == 130
             follow = true
             noclip = true
-		end     
+		end    
+		end)
 repeat wait() until game.Players:FindFirstChild(StandOwner) == nil 
 		local A_1 = "Rejoining!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 			TeleportService = game:GetService("TeleportService")
