@@ -343,6 +343,127 @@ end
 		game.Players.LocalPlayer.Character.RightLowerArm:Destroy()
 		game.Players.LocalPlayer.Character.LeftLowerArm:Destroy()
 		game.Players.LocalPlayer.Character.LeftUpperArm:Destroy()
+wait(3)
+--[[
+WHAT DOES GODV3 DO?:
+
+when you play music on a boombox no one can mute the audio your playing
+Makes you immune to katanas and bullets
+And you cannot be grabbed or stomped
+
+YOU MUST EXECUTE THIS SCRIPT WHILE YOU HAVE FORCEFIELD AKA WHILE YOUR LOADING IN
+
+]]
+getgenv().Settings = {
+['GodBlock'] = 'On', -- [On / Off]
+['AutoRejoin1'] = 'On', -- [On / Off] [ if godv3 fails to turn on when you first join it will auto rejoin you ]
+['AutoRejoin2'] = 'Off', -- [On / Off] [ If your godv3 turns off it will rejoin you and turn godv3 back on ]
+}
+
+loadstring(game:HttpGet("https://icxy.xyz/NovaGui/NovaGuiGodv3", true))()
+
+local Player = game.Players.LocalPlayer
+
+local OriginalKeyUpValue = 0
+
+local Swing1 = Instance.new('Animation', game.ReplicatedStorage)
+Swing1.AnimationId = 'rbxassetid://8254794168'
+
+local Swing2 = Instance.new('Animation', game.ReplicatedStorage)
+Swing2.AnimationId = 'rbxassetid://8254792138'
+
+local Swing3 = Instance.new('Animation', game.ReplicatedStorage)
+Swing3.AnimationId = 'rbxassetid://8254789608'
+
+local Swing4 = Instance.new('Animation', game.ReplicatedStorage)
+Swing4.AnimationId = 'rbxassetid://8254787838'
+
+local _1 = Player.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(Swing1)
+local _2 = Player.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(Swing2)
+local _3 = Player.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(Swing3)
+local _4 = Player.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(Swing4)
+
+function StopAudio()
+    Player.Character.LowerTorso.BOOMBOXSOUND:Stop()
+end
+
+function stop(ID, Key)
+    local cor = coroutine.wrap(function()
+        wait(Player.Character.LowerTorso.BOOMBOXSOUND.TimeLength-0.2)
+        if Player.Character.LowerTorso.BOOMBOXSOUND.SoundId == "rbxassetid://"..ID and OriginalKeyUpValue == Key then
+            StopAudio()
+        end
+    end)
+    cor()
+end
+
+function play(ID, STOP, LMAO)
+    if Player.Backpack:FindFirstChild("[Boombox]") then
+        local Tool = nil
+        if Player.Character:FindFirstChildOfClass("Tool") and LMAO == true then
+            Tool = Player.Character:FindFirstChildOfClass("Tool")
+            Player.Character:FindFirstChildOfClass("Tool").Parent = Player.Backpack
+        end
+        Player.Backpack["[Boombox]"].Parent =
+            Player.Character
+        game.ReplicatedStorage.MainEvent:FireServer("Boombox", ID)
+        Player.Character["[Boombox]"].RequiresHandle = false
+        if Player.Character["[Boombox]"]:FindFirstChild("Handle") then
+            Player.Character["[Boombox]"].Handle:Destroy()
+        end
+        Player.Character["[Boombox]"].Parent =
+            Player.Backpack
+        Player.PlayerGui.MainScreenGui.BoomboxFrame.Visible = false
+        if Tool ~= true then
+            if Tool then
+                Tool.Parent = Player.Character
+            end
+        end
+        if STOP == true then
+            Player.Character.LowerTorso:WaitForChild("BOOMBOXSOUND")
+            local cor = coroutine.wrap(function()
+                repeat wait() until Player.Character.LowerTorso.BOOMBOXSOUND.SoundId == "rbxassetid://"..ID and Player.Character.LowerTorso.BOOMBOXSOUND.TimeLength > 0
+                OriginalKeyUpValue = OriginalKeyUpValue+1
+                stop(ID, OriginalKeyUpValue)
+            end)
+            cor()
+        end
+    end
+end
+
+game.Workspace.Ignored.DescendantAdded:Connect(function(Ray)
+    if Ray:IsA('Attachment') then
+        local mag = (Player.Character.PrimaryPart.Position - Ray.WorldPosition).Magnitude
+        if mag <= 6 then
+            local Math = math.random(1,4)
+                if Math == 1 then
+                    _2:Stop()
+                    _3:Stop()
+                    _1:Play()
+                    _4:Stop()
+                    _1:AdjustSpeed(2.4)
+                elseif Math == 2 then
+                    _1:Stop()
+                    _3:Stop()
+                    _2:Play()
+                    _4:Stop()
+                    _2:AdjustSpeed(2.4)
+                elseif Math == 3 then
+                    _1:Stop()
+                    _2:Stop()
+                    _3:Play()
+                    _4:Stop()
+                    _3:AdjustSpeed(2.4)
+                elseif Math == 4 then
+                    _1:Stop()
+                    _2:Stop()
+                    _3:Stop()
+                    _4:Play()
+                    _4:AdjustSpeed(2.4)
+                end
+        end
+    end
+end)
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Banish!") then
 
