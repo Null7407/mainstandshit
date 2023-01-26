@@ -1243,6 +1243,20 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 			wait()
 			game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Activate()
 			game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Deactivate()
+				for _,v in pairs(game.Players.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks()) do
+v:Stop()
+local Swing1 = Instance.new('Animation', game.ReplicatedStorage)
+Swing1.AnimationId = 'rbxassetid://8254794168'
+local Swing2 = Instance.new('Animation', game.ReplicatedStorage)
+Swing2.AnimationId = 'rbxassetid://8254792138'
+local _2 = game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(Swing2)
+local _1 = game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):LoadAnimation(Swing1)
+_1:Play()
+_1:AdjustSpeed(3)
+wait(0.2)
+_2:Play()
+_2:AdjustSpeed(3)
+wait(0.2)
 		until barragepunch == false
 	end
 end)
