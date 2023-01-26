@@ -1224,7 +1224,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Barrage!") then
 					local A_1 = "MUDA! MUDA! MUDA! MUDA!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 		if Sounds == "On" then
-			play(4968518358, true, true)
+			play(4968518358, false, true)
 		end
 		follow = false
 		oranear = false
