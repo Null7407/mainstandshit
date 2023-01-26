@@ -1245,6 +1245,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 			game.Players.LocalPlayer.Character:FindFirstChild('Combat'):Deactivate()
 				for _,v in pairs(game.Players.LocalPlayer.Character.Humanoid:GetPlayingAnimationTracks()) do
 v:Stop()
+end
 local Swing1 = Instance.new('Animation', game.ReplicatedStorage)
 Swing1.AnimationId = 'rbxassetid://8254794168'
 local Swing2 = Instance.new('Animation', game.ReplicatedStorage)
