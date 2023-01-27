@@ -1044,6 +1044,10 @@ game.Players.LocalPlayer.Character:FindFirstChild("[Knife]"):Activate()
 			barragepos = false
 			barragepunch = false
 			bring = false
+					if game. Players.LocalPlayer.Backpack:FindFirstChild("[Knife]") then
+Player.Backpack:FindFirstChild('[Knife]').Parent = Player.Character
+					end
+					wait(0.1)
 			killtheplayer = true
 			game.Workspace.Camera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
 			--here
@@ -1084,7 +1088,8 @@ end)
 
 game:service"RunService".RenderStepped:connect(function()
 	if killtheplayer == true and game.Players[brotagettingkilled].Character.BodyEffects["K.O"].Value == false then
-		Hit()
+					wait()
+game.Players.LocalPlayer.Character:FindFirstChild("[Knife]"):Activate()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Players")[brotagettingkilled].Character.UpperTorso.Position) * CFrame.new(0,-9,0)
 		game.Workspace.Camera.CameraSubject = game:GetService("Players")[brotagettingkilled].Character.UpperTorso
 	else
