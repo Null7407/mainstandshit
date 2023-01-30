@@ -154,6 +154,16 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 	responseyes = true
 	end
 end)
+game.Players[StandOwner].Chatted:Connect(function(msg)
+	if msg == ("Rejoin!") then
+
+		TeleportService = game:GetService("TeleportService")
+		placeID_1 = 2788229376  --Da hood
+		wait()
+		TeleportService:Teleport(placeID_1, plr)
+
+	end     
+end)
 repeat wait() until responseyes == true
 wait(1)
 --locals for Attack!
@@ -907,18 +917,6 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Credits!") then
 		local A_1 = "This stand script was made by zeno and is currently private right now!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 	end
-end)
-
-
-game.Players[StandOwner].Chatted:Connect(function(msg)
-	if msg == ("Rejoin!") then
-
-		TeleportService = game:GetService("TeleportService")
-		placeID_1 = 2788229376  --Da hood
-		wait()
-		TeleportService:Teleport(placeID_1, plr)
-
-	end     
 end)
 
 game.Players[StandOwner].Chatted:Connect(function(msg)
@@ -2190,7 +2188,7 @@ game:GetService('RunService').Stepped:connect(function()
 end)
 --end
 
-
+		local A_1 = "zeno's stand script has loaded successfully!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 	
 game.Players.LocalPlayer.CharacterAdded:connect(function()
 	follow = false
 	noclip = false
@@ -2280,9 +2278,6 @@ Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
 wait(1)
 
 rm()
-wait(0.5)
-rm()
-wait(1)
 game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
 game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
 
@@ -2333,7 +2328,6 @@ game.Players.PlayerRemoving:Connect(function(plr)
 		StopAudio()
 	end
 end)
-		local A_1 = "zeno's stand script has loaded successfully!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 	
 repeat wait() until game.Players:FindFirstChild(StandOwner) == nil 
 		local A_1 = "Rejoining!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 			TeleportService = game:GetService("TeleportService")
