@@ -148,6 +148,7 @@ if lowgraphics == "On" then
 end
 game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Players")[StandOwner].Character.HumanoidRootPart.CFrame
 		local A_1 = "Would you like to load zeno's stand script?" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Players")[StandOwner].Character.HumanoidRootPart.CFrame
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Yes!") then
 			local A_1 = "Loading..." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
@@ -2188,7 +2189,6 @@ game:GetService('RunService').Stepped:connect(function()
 end)
 --end
 
-		local A_1 = "zeno's stand script has loaded successfully!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 	
 game.Players.LocalPlayer.CharacterAdded:connect(function()
 	follow = false
 	noclip = false
@@ -2282,9 +2282,6 @@ game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
 game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
 
 	wait()
-	follow = true
-	wait()
-	noclip = true
 
 	if noface == "On" then
 		if game.Players.LocalPlayer.Character.Head:FindFirstChild("face") then
@@ -2306,7 +2303,7 @@ spawn(function()
 			end)
 		end
 	end)
-
+		local A_1 = "zeno's stand script has loaded successfully!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 	
 
 game.Players.PlayerRemoving:Connect(function(plr)
 	if plr.Name == StandOwner then
