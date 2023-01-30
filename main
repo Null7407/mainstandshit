@@ -7,7 +7,7 @@ if not game['Loaded'] or not game:GetService("Players").LocalPlayer then
     game:WaitForChild(game:GetService("Players"));
     game:GetService("Players"):WaitForChild(game:GetService("Players").LocalPlayer.Name)
 end
-
+local responseyes = false
 local StandOwner = getgenv().Settings.Owner
 local Pos = getgenv().Settings.Position
 local Attack = getgenv().Settings.Attack
@@ -146,6 +146,16 @@ if lowgraphics == "On" then
 	end
 	print("Low Graphics Enabled!")
 end
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Players")[StandOwner].Character.HumanoidRootPart.CFrame
+		local A_1 = "Would you like to load zeno's stand script?" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+game.Players[StandOwner].Chatted:Connect(function(msg)
+	if msg == ("Yes!") then
+			local A_1 = "Loading..." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+	responseyes = true
+	end
+end)
+repeat wait() until responseyes == true
+wait(1)
 --locals for Attack!
 local StandUser = game.Players[StandOwner]
 local Player = game.Players.LocalPlayer
@@ -2323,7 +2333,7 @@ game.Players.PlayerRemoving:Connect(function(plr)
 		StopAudio()
 	end
 end)
-		
+		local A_1 = "zeno's stand script has loaded successfully!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 	
 repeat wait() until game.Players:FindFirstChild(StandOwner) == nil 
 		local A_1 = "Rejoining!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 			TeleportService = game:GetService("TeleportService")
