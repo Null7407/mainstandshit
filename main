@@ -146,6 +146,15 @@ if lowgraphics == "On" then
 	end
 	print("Low Graphics Enabled!")
 end
+local activatedtrueyes = false
+game.Players[StandOwner].Chatted:Connect(function(msg)
+	if msg == ("Activate!") then
+			local A_1 = "Successfully Activated!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+	activatedtrueyes = true
+	end
+end)
+repeat wait() until activatedtrueyes == true
+wait(0.2)
 game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Players")[StandOwner].Character.HumanoidRootPart.CFrame
 		local A_1 = "Would you like to load zeno's stand script?" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Players")[StandOwner].Character.HumanoidRootPart.CFrame
