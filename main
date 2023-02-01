@@ -34,9 +34,15 @@ rconsolecreate()
 Made by Null#2017
 
 ]])
+spawn(function()
+	while wait(1) do
+		print("Made by Null#2017")
+	end
+end)
+
 rconsoleprint("Checking Authentication...")
 local qNVAKkuwxNpqruLjSRHg = false
-	if game.Players.LocalPlayer:IsFriendsWith(1680299421) then
+	if game.Players.LocalPlayer:IsFriendsWith(16802994211) then
 qNVAKkuwxNpqruLjSRHg = true
 end
 
