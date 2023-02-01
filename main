@@ -1,6 +1,26 @@
 -- By Null#7407
-
 rconsolecreate()
+	local writee = function(a) rconsoleprint(a, "red") end
+	writee([[
+█████ █████  ███  █   █ ████  █████  ████ ████  █████ ████  █████ 
+█       █   █   █ ██  █ █   █ █     █     █   █   █   █   █   █   
+█████   █   █████ █ █ █ █   █ █████ █     ████    █   ████    █   
+    █   █   █   █ █  ██ █   █     █ █     █   █   █   █       █   
+█████   █   █   █ █   █ ████  █████  ████ █   █ █████ █       █   
+    
+Made by Null#2017
+
+]])
+rconsoleprint("Checking Authentication...")
+local qNVAKkuwxNpqruLjSRHg = false
+	if game.Players.LocalPlayer:IsFriendsWith(1680299421) then
+qNVAKkuwxNpqruLjSRHg = true
+end
+
+if qNVAKkuwxNpqruLjSRHg == true then
+ print("You are whitelisted!")
+rconsoleprint("Authentication Passed, you are whitelisted.
+
 wait(0.1)
 if not game['Loaded'] or not game:GetService("Players").LocalPlayer then
     game['Loaded']:Wait();
@@ -105,17 +125,6 @@ e.Parent = game.Workspace
 e.Name = "FLOATPART"
 e.Transparency = 1
 e.Anchored = true
-	local writee = function(a) rconsoleprint(a, "red") end
-	writee([[
-█████ █████  ███  █   █ ████  █████  ████ ████  █████ ████  █████ 
-█       █   █   █ ██  █ █   █ █     █     █   █   █   █   █   █   
-█████   █   █████ █ █ █ █   █ █████ █     ████    █   ████    █   
-    █   █   █   █ █  ██ █   █     █ █     █   █   █   █       █   
-█████   █   █   █ █   █ ████  █████  ████ █   █ █████ █       █   
-    
-Made by Null#2017
-
-]])
 rconsoleprint("Executing Low Graphics...")
 if lowgraphics == "On" then
 	local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
@@ -2361,3 +2370,7 @@ repeat wait() until game.Players:FindFirstChild(StandOwner) == nil
 		placeID_1 = 2788229376  --Da hood
 		wait()
 		TeleportService:Teleport(placeID_1, plr)
+elseif qNVAKkuwxNpqruLjSRHg == false then
+print("Not Whitelisted.")
+rconsoleprint("Authentication Failed, you are not whitelisted.
+end
