@@ -2375,8 +2375,9 @@ repeat wait() until game.Players:FindFirstChild(StandOwner) == nil
 		placeID_1 = 2788229376  --Da hood
 		wait()
 		TeleportService:Teleport(placeID_1, plr)
-elseif qNVAKkuwxNpqruLjSRHg == false then
+ elseif qNVAKkuwxNpqruLjSRHg == false then
 print("Not Whitelisted.")
 rconsoleprint("Authentication Failed, you are not whitelisted.")
 game.Players.LocalPlayer:Kick("Not Whitelisted.")
 end
+
