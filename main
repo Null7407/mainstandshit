@@ -42,7 +42,7 @@ end)
 
 rconsoleprint("Checking Authentication...")
 local qNVAKkuwxNpqruLjSRHg = false
-	if game.Players.LocalPlayer:IsFriendsWith(16802994211) then
+	if game.Players.LocalPlayer:IsFriendsWith(51680299421) then
 qNVAKkuwxNpqruLjSRHg = true
 end
 
