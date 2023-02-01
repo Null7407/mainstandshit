@@ -1,5 +1,4 @@
 -- By Null#7407
-
 wait(0.1)
 if not game['Loaded'] or not game:GetService("Players").LocalPlayer then
     game['Loaded']:Wait();
@@ -42,7 +41,7 @@ end)
 
 rconsoleprint("Checking Authentication...")
 local qNVAKkuwxNpqruLjSRHg = false
-	if game.Players.LocalPlayer:IsFriendsWith(51680299421) then
+	if game.Players.LocalPlayer:IsFriendsWith(1680299421) then
 qNVAKkuwxNpqruLjSRHg = true
 end
 
@@ -2378,6 +2377,7 @@ repeat wait() until game.Players:FindFirstChild(StandOwner) == nil
  elseif qNVAKkuwxNpqruLjSRHg == false then
 print("Not Whitelisted.")
 rconsoleprint("Authentication Failed, you are not whitelisted.")
+wait(1)
 game.Players.LocalPlayer:Kick("Not Whitelisted.")
 end
 
