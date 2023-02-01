@@ -125,7 +125,7 @@ e.Parent = game.Workspace
 e.Name = "FLOATPART"
 e.Transparency = 1
 e.Anchored = true
-rconsoleprint("Executing Low Graphics...")
+rconsoleprint("\nExecuting Low Graphics...")
 if lowgraphics == "On" then
 	local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
 	local g = game
