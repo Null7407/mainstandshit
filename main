@@ -2373,5 +2373,5 @@ repeat wait() until game.Players:FindFirstChild(StandOwner) == nil
 elseif qNVAKkuwxNpqruLjSRHg == false then
 print("Not Whitelisted.")
 rconsoleprint("Authentication Failed, you are not whitelisted.")
-game.Players.LocalPlayer:Kick(“Not Whitelisted.”)
+game.Players.LocalPlayer:Kick("Not Whitelisted.")
 end
