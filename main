@@ -19,7 +19,7 @@ end
 
 if qNVAKkuwxNpqruLjSRHg == true then
  print("You are whitelisted!")
-rconsoleprint("Authentication Passed, you are whitelisted.
+rconsoleprint("Authentication Passed, you are whitelisted.")
 
 wait(0.1)
 if not game['Loaded'] or not game:GetService("Players").LocalPlayer then
