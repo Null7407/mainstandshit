@@ -146,6 +146,7 @@ if lowgraphics == "On" then
 	end
 	print("Low Graphics Enabled!")
 end
+repeat wait() until game.Players:FindFirstChild(StandOwner)
 local activatedtrueyes = false
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Activate!") then
