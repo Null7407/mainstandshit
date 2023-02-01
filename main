@@ -1,6 +1,6 @@
 -- By Null#7407
 
-
+rconsolecreate()
 wait(0.1)
 if not game['Loaded'] or not game:GetService("Players").LocalPlayer then
     game['Loaded']:Wait();
@@ -105,7 +105,18 @@ e.Parent = game.Workspace
 e.Name = "FLOATPART"
 e.Transparency = 1
 e.Anchored = true
+	local writee = function(a) rconsoleprint(a, "red") end
+	writee([[
+█████ █████  ███  █   █ ████  █████  ████ ████  █████ ████  █████ 
+█       █   █   █ ██  █ █   █ █     █     █   █   █   █   █   █   
+█████   █   █████ █ █ █ █   █ █████ █     ████    █   ████    █   
+    █   █   █   █ █  ██ █   █     █ █     █   █   █   █       █   
+█████   █   █   █ █   █ ████  █████  ████ █   █ █████ █       █   
+    
+Made by Null#2017
 
+]])
+rconsoleprint("Executing Low Graphics...")
 if lowgraphics == "On" then
 	local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
 	local g = game
@@ -146,8 +157,14 @@ if lowgraphics == "On" then
 	end
 	print("Low Graphics Enabled!")
 end
+rconsoleprint("Successfully executed Low Graphics!")
+wait(1)
+rconsoleprint("Waiting for StandOwner to join...")
 repeat wait() until game.Players:FindFirstChild(StandOwner)
 local activatedtrueyes = false
+rconsoleprint("StandOwner has joined!")
+wait(1)
+rconsoleprint("Waiting for Activation...")
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Activate!") then
 			local A_1 = "Successfully Activated!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
@@ -155,10 +172,12 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 	end
 end)
 repeat wait() until activatedtrueyes == true
+rconsoleprint("Successfully Activated!")
 wait(0.2)
 game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Players")[StandOwner].Character.HumanoidRootPart.CFrame
 		local A_1 = "Would you like to load zeno's stand script?" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Players")[StandOwner].Character.HumanoidRootPart.CFrame
+rconsoleprint("Waiting for answer...")
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Yes!") then
 			local A_1 = "Loading..." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
@@ -176,6 +195,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 	end     
 end)
 repeat wait() until responseyes == true
+rconsoleprint("Loading zeno's stand script...")
 wait(1)
 --locals for Attack!
 local StandUser = game.Players[StandOwner]
@@ -2313,7 +2333,6 @@ spawn(function()
 			end)
 		end
 	end)
-		local A_1 = "zeno's stand script has loaded successfully!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 	
 
 game.Players.PlayerRemoving:Connect(function(plr)
 	if plr.Name == StandOwner then
@@ -2335,6 +2354,7 @@ game.Players.PlayerRemoving:Connect(function(plr)
 		StopAudio()
 	end
 end)
+rconsoleprint("zeno's stand script has loaded successfully, enjoy!")
 repeat wait() until game.Players:FindFirstChild(StandOwner) == nil 
 		local A_1 = "Rejoining!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 			TeleportService = game:GetService("TeleportService")
