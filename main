@@ -1,4 +1,5 @@
 -- By Null#7407
+wait(3)
 rconsolecreate()
 	local writee = function(a) rconsoleprint(a, "red") end
 	writee([[
