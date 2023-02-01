@@ -157,14 +157,16 @@ if lowgraphics == "On" then
 	end
 	print("Low Graphics Enabled!")
 end
-rconsoleprint("Successfully executed Low Graphics!")
+rconsoleprint(" Successfully executed Low Graphics!")
 wait(1)
-rconsoleprint("Waiting for StandOwner to join...")
+rconsoleprint("
+Waiting for StandOwner to join...")
 repeat wait() until game.Players:FindFirstChild(StandOwner)
 local activatedtrueyes = false
-rconsoleprint("StandOwner has joined!")
+rconsoleprint(" StandOwner has joined!")
 wait(1)
-rconsoleprint("Waiting for Activation...")
+rconsoleprint("
+Waiting for Activation...")
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Activate!") then
 			local A_1 = "Successfully Activated!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
@@ -172,12 +174,13 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 	end
 end)
 repeat wait() until activatedtrueyes == true
-rconsoleprint("Successfully Activated!")
+rconsoleprint(" Successfully Activated!")
 wait(0.2)
 game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Players")[StandOwner].Character.HumanoidRootPart.CFrame
 		local A_1 = "Would you like to load zeno's stand script?" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Players")[StandOwner].Character.HumanoidRootPart.CFrame
-rconsoleprint("Waiting for answer...")
+rconsoleprint("
+Waiting for answer...")
 game.Players[StandOwner].Chatted:Connect(function(msg)
 	if msg == ("Yes!") then
 			local A_1 = "Loading..." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
@@ -195,7 +198,7 @@ game.Players[StandOwner].Chatted:Connect(function(msg)
 	end     
 end)
 repeat wait() until responseyes == true
-rconsoleprint("Loading zeno's stand script...")
+rconsoleprint(" Loading zeno's stand script...")
 wait(1)
 --locals for Attack!
 local StandUser = game.Players[StandOwner]
@@ -2354,7 +2357,8 @@ game.Players.PlayerRemoving:Connect(function(plr)
 		StopAudio()
 	end
 end)
-rconsoleprint("zeno's stand script has loaded successfully, enjoy!")
+rconsoleprint("
+zeno's stand script has loaded successfully, enjoy!")
 repeat wait() until game.Players:FindFirstChild(StandOwner) == nil 
 		local A_1 = "Rejoining!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 			TeleportService = game:GetService("TeleportService")
