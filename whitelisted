@@ -1,3 +1,1 @@
-local whitelist = {"455A51CB-17EF-4F85-930B-7D87C69A09E6"}
-
-return whitelist
+{"455A51CB-17EF-4F85-930B-7D87C69A09E6"}
